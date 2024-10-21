@@ -1,0 +1,117 @@
+
+.goldenale {
+    background-color:white
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    color:black;
+}
+
+
+/* card styling */
+
+.knucklepuck {
+    transition: 0.3s;
+    border-radius: 3px;
+    margin: 0;
+
+    -moz-box-shadow: 10px 10px 30px lightgoldenrodyellow;
+    -webkit-box-shadow:  10px 10px 30px lightgoldenrodyellow;
+    box-shadow:  10px 10px 30px lightgoldenrodyellow;
+    padding: 10px;
+
+    background-color: white;
+}
+
+.knucklepuck:hover {
+    box-shadow: 30px 30px 50px 30px lightgoldenrodyellow;
+    cursor: default;
+}
+
+.card {
+    margin: 10px;
+    background-color: white;
+}
+
+
+/*  */
+
+.flexdaddy {
+    display: flex;
+    width:100%;
+    height:100%;
+}
+
+.lbabyflex {
+    flex-grow: 1;
+    width: 20%;
+}
+
+.rbabyflex {
+    flex-grow: 7;
+    width: 80%;
+
+}
+.innerchart {
+    height: 650px;
+}
+
+.fold2flex {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 50%;
+    height:620px;
+}
+
+
+.midfoldney {
+    height:620px;
+}
+
+
+.right {
+    width: 50%;
+    height:650px;
+}
+
+.midflex {
+    display: flex;
+    flex-direction: column;
+    height:650px;
+
+}
+
+.openmidone {
+    height:255px;
+}
+
+.openmidtwo {
+    height:255px;
+}
+
+.openmidthree {
+    height:30px;
+}
+
+.openmidfour {
+    height:30px;
+}
+
+
+
+.belowbelow {
+    display: flex;
+    width:100%;
+}
+
+.downbelow {
+    flex-grow: 1;
+    width:100%
+}
