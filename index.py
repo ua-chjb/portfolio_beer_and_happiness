@@ -9,7 +9,9 @@ from charts import fig_A_heatmap, fig_B_bubblechart, fig_F_popbar, layout_func
 
 Card_title = dbc.Card(
     dbc.CardBody([
-        html.H1("What role does beer play in freedom?", className="title")
+        html.H1("Beer By Happiness", className="title"),
+        html.H4("Beer consumption per capita by an index from the World Happiness Report", className="title")
+
     ], className="knucklepuck")
 )
 
@@ -74,7 +76,7 @@ Card_2fold_right_bottom = dbc.Card(
 # # # # # # # # # # # # # # # # # # # # # # # # #
 Card_3fold = dbc.Card(
     dbc.CardBody([
-        dcc.Graph(figure=layout_func(fig_F_popbar()))
+        dcc.Graph(figure=layout_func(fig_F_popbar()), className="downdown")
     ], className="knucklepuck"), className="downbelow"
 )
  #####################################################################################

@@ -1,4 +1,8 @@
 
+* {
+    zoom: 0.995
+}
+
 .goldenale {
     background-color:white
 }
@@ -19,16 +23,16 @@
     border-radius: 3px;
     margin: 0;
 
-    -moz-box-shadow: 10px 10px 30px lightgoldenrodyellow;
-    -webkit-box-shadow:  10px 10px 30px lightgoldenrodyellow;
-    box-shadow:  10px 10px 30px lightgoldenrodyellow;
+    -moz-box-shadow: 10px 10px 30px #EEEEEE;
+    -webkit-box-shadow:  10px 10px 30px #EEEEEE;
+    box-shadow:  10px 10px 30px #EEEEEE;
     padding: 10px;
 
     background-color: white;
 }
 
 .knucklepuck:hover {
-    box-shadow: 30px 30px 50px 30px lightgoldenrodyellow;
+    box-shadow: 30px 30px 50px 30px #EEEEEE;
     cursor: default;
 }
 
@@ -109,9 +113,15 @@
 .belowbelow {
     display: flex;
     width:100%;
+    height:600px;
 }
 
 .downbelow {
-    flex-grow: 1;
-    width:100%
+    /* flex-grow: 1; */
+    width:100%;
+    height: 600px;
+}
+
+.downdown {
+    height:600px;
 }
