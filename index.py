@@ -9,8 +9,8 @@ from charts import fig_A_heatmap, fig_B_bubblechart, fig_F_popbar, layout_func
 
 Card_title = dbc.Card(
     dbc.CardBody([
-        html.H1("Beer By Happiness", className="title"),
-        html.H4("Beer consumption per capita by an index from the World Happiness Report", className="title")
+        html.H1("Beer by Democracy", className="title"),
+        html.H4("Beer consumption per capita by Democratic Quality (DQ), an index from the World Happiness Report", className="title")
 
     ], className="knucklepuck")
 )
@@ -76,7 +76,7 @@ Card_2fold_right_bottom = dbc.Card(
 # # # # # # # # # # # # # # # # # # # # # # # # #
 Card_3fold = dbc.Card(
     dbc.CardBody([
-        dcc.Graph(figure=layout_func(fig_F_popbar()), className="downdown")
+        dcc.Graph(figure=layout_func(fig_F_popbar()).update_layout({"xaxis": {"showgrid": False}}), className="downdown")
     ], className="knucklepuck"), className="downbelow"
 )
  #####################################################################################
@@ -106,25 +106,8 @@ fold3 = html.Div([
 
  #####################################################################################
 
-
-beerstore = html.Div([
-    dcc.Store(id="beerstore", data={}, storage_type="memory"),
-])
-
-demstore = html.Div([
-    dcc.Store(id="demstore", data={}, storage_type="memory"),
-])
-
-popstore = html.Div([
-    dcc.Store(id="popstore", data={}, storage_type="memory"),
-])
-
-
 lyt = html.Div([
     fold1,
     fold2,
     fold3,
-    beerstore,
-    demstore,
-    popstore
 ], className="goldenale")

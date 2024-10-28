@@ -252,11 +252,13 @@ def layout_func(fig):
                 # font={"size": 28.5, "color": font_color},
                 # ),
             xaxis=dict(
-                showgrid=False,
+                showgrid=True,
+                gridcolor="#EEEEEE",
                 zeroline=False,
             ),
             yaxis=dict(
-                showgrid=False,
+                showgrid=True,
+                gridcolor="#EEEEEE",
                 zeroline=False,
             )
         )
